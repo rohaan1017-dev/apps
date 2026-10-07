@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy policy | ShiftTally</title>
+  <meta name="description" content="What ShiftTally collects, why, where it's stored and how to delete it.">
+  <meta name="theme-color" content="#1F6F5C">
+  <link rel="icon" href="favicon.png" type="image/png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html"><img src="icon-192.png" alt="" width="36" height="36">ShiftTally</a>
+      <nav aria-label="Site">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="support.html">Support</a></li>
+          <li><a href="privacy.html" aria-current="page">Privacy</a></li>
+          <li><a href="terms.html">Terms</a></li>
+          <li><a href="delete-account.html">Delete account</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <div class="wrap">
+      <h1>Privacy policy</h1>
+      <p class="note"><strong>DRAFT for the app owner.</strong> Same content as <code>docs/privacy-policy.md</code>; keep the two in step. Replace every [bracketed] placeholder, have it reviewed, then delete this box.</p>
+      <p class="updated">Last updated: [date]</p>
+
+      <p>ShiftTally ("the app") is provided by Rohaan Patel ("we"). This policy explains what the app collects, why, and how you can delete it.</p>
+
+      <h2>What we collect</h2>
+      <p>What you give the app so it can work, plus the sign-in records our authentication provider keeps for security:</p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th scope="col">Data</th><th scope="col">Examples</th><th scope="col">Why</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="Data">Email address</td>
+              <td data-label="Examples">you@example.com</td>
+              <td data-label="Why">Your account login, confirmation and password-reset emails</td>
+            </tr>
+            <tr>
+              <td data-label="Data">Password</td>
+              <td data-label="Examples">&mdash;</td>
+              <td data-label="Why">Signing in. Stored only as a salted hash by our authentication provider; we can't read it</td>
+            </tr>
+            <tr>
+              <td data-label="Data">Account ID</td>
+              <td data-label="Examples">A random identifier</td>
+              <td data-label="Why">Links your shifts, jobs and paychecks to your account</td>
+            </tr>
+            <tr>
+              <td data-label="Data">Jobs</td>
+              <td data-label="Examples">Job name, colour, hourly rate, overtime rule, threshold and multiplier, the day your workweek starts, pay frequency and the first day of a pay period, whether the job is archived</td>
+              <td data-label="Why">Working out overtime and paycheck estimates for each job</td>
+            </tr>
+            <tr>
+              <td data-label="Data">Shift records</td>
+              <td data-label="Examples">The job, start and end times, break minutes, hourly rate, card tips, cash tips, tip-outs, optional notes, when each record was created or changed</td>
+              <td data-label="Why">Showing your shifts, hours, tips and pay</td>
+            </tr>
+            <tr>
+              <td data-label="Data">Paychecks you record</td>
+              <td data-label="Examples">The job and pay period, the gross amount you were paid, an optional note</td>
+              <td data-label="Why">Comparing what you were paid with your own record ("Check my paycheck")</td>
+            </tr>
+            <tr>
+              <td data-label="Data">Sign-in and security records</td>
+              <td data-label="Examples">IP address, device or browser type (user agent), times of sign-ins, sign-outs, password resets and account changes</td>
+              <td data-label="Why">Keeping your account secure (for example spotting unusual sign-ins) and running the service</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>The sign-in and security records are linked to your account. We don't use your IP address to work out where you are.</p>
+      <p>We <strong>don't</strong> collect your location, contacts, photos, advertising identifiers or bank or payment card details. The app has <strong>no ads, no analytics and no tracking</strong>, and we don't sell your data or share it with anyone for advertising.</p>
+      <p>Overtime, paycheck and year totals are worked out from this data. They're estimates for your own records, not payroll, legal or tax advice.</p>
+
+      <h2>Exporting and sharing</h2>
+      <p><strong>Export all shifts</strong> (a CSV file) and <strong>Share summary</strong> (a short text of your year's totals) are created on your device and open your phone's share sheet (on the web, the file downloads). Nothing is sent to us or anyone else unless you choose where it goes, for example an email, a cloud drive or another app. Once you share it, the app or person you send it to handles it under their own terms. The app doesn't need any extra permission for this.</p>
+
+      <h2>Where it's stored</h2>
+      <p>Your account, jobs, shift records and paychecks are stored with <a href="https://supabase.com">Supabase</a> (Supabase, Inc.), which hosts our database and authentication on our behalf, in the AWS us-east-2 (Ohio, USA) region. Data is encrypted in transit (HTTPS) and at rest. Database access rules make sure each account can only read and change its own shifts, jobs and paychecks.</p>
+      <p>The app keeps your sign-in session on your device so you stay signed in. It's removed when you sign out or delete your account.</p>
+
+      <h2>How long we keep it</h2>
+      <p>We keep your data for as long as you have an account. If you delete your account, your account and all your jobs, shift records and paychecks are deleted immediately from the live database. Copies may remain in our provider's encrypted backups for up to [N] days before they're overwritten, and our authentication provider's security logs (sign-in events, IP address) are kept for up to [N] days before they're removed.</p>
+
+      <h2>Deleting your account and data</h2>
+      <ul>
+        <li><strong>In the app:</strong> <strong>Profile</strong> tab &rarr; <strong>Delete account</strong>, then type <kbd>DELETE</kbd> to confirm. This deletes your account and every shift, job and paycheck straight away.</li>
+        <li><strong>Without the app:</strong> follow the steps on <a href="delete-account.html">Delete your account</a>, or email <a href="mailto:rohaan1017@icloud.com">rohaan1017@icloud.com</a> from the address you signed up with, and we'll delete your account within [30] days.</li>
+      </ul>
+      <p>You can also edit or delete individual shifts, edit or remove a recorded paycheck, and edit or archive a job at any time in the app. To keep a copy of your shifts first, use <strong>Export all shifts</strong> on the Profile tab.</p>
+
+      <h2>Your rights</h2>
+      <p>Depending on where you live (for example under the GDPR or CCPA/CPRA), you may have the right to access, correct, export or delete your data, and to object to or restrict its processing. Contact us at <a href="mailto:rohaan1017@icloud.com">rohaan1017@icloud.com</a> to make a request. We process your data to provide the service you asked for (performance of a contract).</p>
+
+      <h2>Children</h2>
+      <p>ShiftTally is meant for adults (18 and over) and isn't directed at children. We don't knowingly collect data from children under 13; if you believe a child has created an account, contact us and we'll delete it.</p>
+
+      <h2>Changes</h2>
+      <p>If we change this policy we'll update the date above and, for significant changes, tell you in the app.</p>
+
+      <h2>Contact</h2>
+      <p>Rohaan Patel, 2020 Golf Course View Dr, <a href="mailto:rohaan1017@icloud.com">rohaan1017@icloud.com</a></p>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <ul>
+        <li><a href="support.html">Support</a></li>
+        <li><a href="privacy.html">Privacy policy</a></li>
+        <li><a href="terms.html">Terms of use</a></li>
+        <li><a href="delete-account.html">Delete your account</a></li>
+      </ul>
+      <p>&copy; 2026 Rohaan Patel</p>
+    </div>
+  </footer>
+</body>
+</html>
